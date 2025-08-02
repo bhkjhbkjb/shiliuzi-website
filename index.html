@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>石榴籽 - 上海对外经贸大学少数民族资助政策宣讲团</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/lucide@latest/dist/umd/lucide.min.js"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
+        }
+        .hero-bg {
+            background-color: #f8f9fa;
+            background-image: linear-gradient(135deg, #fff1f2 0%, #e0f2fe 100%);
+        }
+        .brand-text-red { color: #d93737; }
+        .brand-text-blue { color: #003366; }
+        .section-title {
+            font-size: 2.25rem;
+            font-weight: 700;
+            margin-bottom: 2.5rem;
+            text-align: center;
+        }
+        .section-subtitle {
+            text-align: center;
+            color: #6b7280;
+            margin-top: -1.5rem;
+            margin-bottom: 3rem;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .card {
+            background-color: white;
+            border-radius: 0.75rem;
+            box-shadow: 0 4px_6px_-1px_rgb(0 0 0 / 0.1), 0 2px_4px_-2px_rgb(0 0 0 / 0.1);
+        }
+        .details-item details > summary { list-style: none; }
+        .details-item details > summary::-webkit-details-marker { display: none; }
+        .details-item summary {
+            transition: background-color 0.2s ease;
+        }
+        .details-item details[open] > summary {
+            background-color: #f8fafc;
+        }
+        .fade-in { animation: fadeIn 1s ease-in-out; }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        /* Tab Styles */
+        .tab-button.active {
+            border-color: #d93737;
+            color: #d93737;
+            background-color: #fff1f2;
+        }
+        .tab-content { display: none; }
+        .tab-content.active { display: block; }
+    </style>
+</head>
+<body class="bg-gray-50">
+
+    <header id="header" class="bg-white/80 backdrop-blur-md sticky top-0 z-50 shadow-sm">
+        <nav class="container mx-auto px-6 py-3 flex justify-between items-center">
+            <div class="flex items-center space-x-4">
+                <img src="https://img.icons8.com/plasticine/100/pomegranate.png" alt="石榴籽 Logo" class="h-12 w-12">
+                <div>
+                    <a href="#" class="text-xl font-bold brand-text-red">石榴籽宣讲团</a>
+                    <p class="text-xs text-gray-500">上海对外经贸大学</p>
+                </div>
+            </div>
+            <div class="hidden lg:flex items-center space-x-6">
+                <a href="#home" class="text-gray-600 hover:brand-text-red transition-colors">首页</a>
+                <a href="#national-system" class="text-gray-600 hover:brand-text-red transition-colors">国家资助体系</a>
+                <a href="#minority-policies" class="text-gray-600 hover:brand-text-red transition-colors">少数民族专项</a>
+                <a href="#suibe-aid" class="text-gray-600 hover:brand-text-red transition-colors">上经贸大资助</a>
+                <a href="#faq" class="text-gray-600 hover:brand-text-red transition-colors">申请指南</a>
+                <a href="#about" class="text-gray-600 hover:brand-text-red transition-colors">关于我们</a>
+                <a href="#contact" class="bg-red-500 hover:bg-red-600 text-white font-semibold px-4 py-2 rounded-full transition-transform transform hover:scale-105">联系我们</a>
+            </div>
+            <div class="lg:hidden">
+                <button id="mobile-menu-button" class="text-gray-600 hover:text-red-500 focus:outline-none">
+                    <i data-lucide="menu" class="w-6 h-6"></i>
+                </button>
+            </div>
+        </nav>
+        <div id="mobile-menu" class="hidden lg:hidden px-6 pb-4">
+            <a href="#home" class="block py-2 text-gray-600 hover:brand-text-red">首页</a>
+            <a href="#national-system" class="block py-2 text-gray-600 hover:brand-text-red">国家资助体系</a>
+            <a href="#minority-policies" class="block py-2 text-gray-600 hover:brand-text-red">少数民族专项</a>
+            <a href="#suibe-aid" class="block py-2 text-gray-600 hover:brand-text-red">上经贸大资助</a>
+            <a href="#faq" class="block py-2 text-gray-600 hover:brand-text-red">申请指南</a>
+            <a href="#about" class="block py-2 text-gray-600 hover:brand-text-red">关于我们</a>
+            <a href="#contact" class="block mt-2 text-center bg-red-500 hover:bg-red-600 text-white font-semibold px-4 py-2 rounded-full">联系我们</a>
+        </div>
+    </header>
+
+    <main>
+        <section id="home" class="hero-bg pt-24 pb-20">
+            <div class="container mx-auto px-6 text-center fade-in">
+                <h1 class="text-4xl md:text-6xl font-bold brand-text-blue mb-4">
+                    <span class="brand-text-red">石榴籽</span>心，助梦远航
+                </h1>
+                <p class="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto mb-8">
+                    我们是上海对外经贸大学“石榴籽”少数民族资助宣讲团，致力于将国家覆盖全学段的资助政策带给每一位需要的同学，助力你们的求学之路。
+                </p>
+                 <p class="text-md md:text-lg text-gray-500 italic mb-10">
+                    "桂陇渝月共天山，河洛荆襄颁惠笺"
+                </p>
+                <a href="#national-system" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-full text-lg transition-transform transform hover:scale-105">
+                    探索资助方案
+                </a>
+            </div>
+        </section>
+
+        <section id="national-system" class="py-20 bg-white">
+            <div class="container mx-auto px-6">
+                <h2 class="section-title brand-text-blue">国家学生资助政策体系 (分学段详解)</h2>
+                <p class="section-subtitle">
+                    从学前教育到高等教育，国家已建立起完善的资助政策体系。点击下方各学段卡片内的项目，可查看详细申请条件与标准。
+                </p>
+                <div class="grid md:grid-cols-1 lg:grid-cols-2 gap-8">
+                    
+                    <div class="card p-6 lg:col-span-2">
+                        <div class="flex items-center text-red-500 mb-4"><i data-lucide="university" class="w-10 h-10 mr-4"></i><h3 class="text-2xl font-bold">高等教育阶段 (本专科、研究生)</h3></div>
+                        <div class="space-y-2">
+                            <div class="details-item border rounded-lg"><details><summary class="flex items-center justify-between p-3 cursor-pointer font-semibold"><span class="flex items-center"><i data-lucide="award" class="w-5 h-5 mr-2 text-yellow-500"></i>国家奖学金</span><i data-lucide="chevron-down" class="w-5 h-5 transition-transform transform group-open:rotate-180"></i></summary><div class="p-4 border-t text-gray-700 leading-relaxed"><p><strong>对象:</strong> 奖励特别优秀的二年级以上(含二年级)全日制在校生。<br><strong>金额:</strong> 本专科生每人每年10000元；硕士研究生20000元；博士研究生30000元。<br><strong>申请条件:</strong><br>  - 学习成绩排名与综合考评成绩排名原则上均位于前10%（含10%）。<br>  - 如成绩排名未进入前10%，但达到前30%（含30%），且在道德风尚、学术研究、学科竞赛、创新发明、社会实践等方面表现非常突出，也可申请，但需提交详细证明材料。<br><strong>申请材料:</strong><br>  - 《国家奖学金申请审批表》。<br>  - 学年成绩单和综合考评结果排名表。<br>  - 各类获奖证书复印件及其他突出表现证明材料。</p></div></details></div>
+                            <div class="details-item border rounded-lg"><details><summary class="flex items-center justify-between p-3 cursor-pointer font-semibold"><span class="flex items-center"><i data-lucide="star" class="w-5 h-5 mr-2 text-green-500"></i>国家励志奖学金</span><i data-lucide="chevron-down" class="w-5 h-5 transition-transform transform group-open:rotate-180"></i></summary><div class="p-4 border-t text-gray-700 leading-relaxed"><p><strong>对象:</strong> 奖励资助品学兼优、家庭经济困难的二年级以上(含二年级)全日制本专科在校生。<br><strong>金额:</strong> 每人每年6000元。<br><strong>基本条件:</strong><br>  - 热爱社会主义祖国，拥护中国共产党的领导。<br>  - 遵守宪法和法律，遵守学校规章制度。<br>  - 诚实守信，道德品质优良。<br>  - 在校期间学习成绩优秀。<br>  - 家庭经济困难，生活俭朴。<br><strong>申请材料:</strong><br>  - 《国家励志奖学金申请表》。<br>  - 各类获奖证书复印件。<br>  - 家庭经济困难情况的个人说明及相关证明文件。</p></div></details></div>
+                            <div class="details-item border rounded-lg"><details><summary class="flex items-center justify-between p-3 cursor-pointer font-semibold"><span class="flex items-center"><i data-lucide="piggy-bank" class="w-5 h-5 mr-2 text-blue-500"></i>国家助学金</span><i data-lucide="chevron-down" class="w-5 h-5 transition-transform transform group-open:rotate-180"></i></summary><div class="p-4 border-t text-gray-700 leading-relaxed"><p><strong>对象:</strong> 资助家庭经济困难的全日制本专科生及研究生。<br><strong>金额:</strong> 全国平均每生每年3300元。具体标准由各高校在2000-4500元范围内确定，可设2-3档。例如，上经贸大分为三档：一档5000元，二档3700元，三档2500元。<br><strong>基本条件:</strong><br>  - 热爱社会主义祖国，拥护中国共产党的领导。<br>  - 遵守宪法和法律，遵守学校规章制度。<br>  - 诚实守信，道德品质优良。<br>  - 勤奋学习，积极上进。<br>  - 家庭经济困难，生活俭朴。<br><strong>申请材料:</strong><br>  - 《普通高校家庭经济困难学生认定申请表》或《高校家庭情况调查表》。<br>  - 家庭经济困难情况的个人说明及相关证明文件。</p></div></details></div>
+                            <div class="details-item border rounded-lg"><details><summary class="flex items-center justify-between p-3 cursor-pointer font-semibold"><span class="flex items-center"><i data-lucide="landmark" class="w-5 h-5 mr-2 text-indigo-500"></i>国家助学贷款</span><i data-lucide="chevron-down" class="w-5 h-5 transition-transform transform group-open:rotate-180"></i></summary><div class="p-4 border-t text-gray-700 leading-relaxed"><p><strong>对象:</strong> 家庭经济困难的全日制本专科生及研究生。<br><strong>金额:</strong> 本专科生每人每学年最高不超过20000元，研究生最高不超过25000元。<br><strong>基本条件:</strong><br>  - 具有中华人民共和国国籍，年满16周岁。<br>  - 诚实守信，遵纪守法，无违法违纪行为。<br>  - 学习努力，能够正常完成学业。<br><strong>申请材料:</strong><br>  - 国家助学贷款申请书。<br>  - 本人学生证(或录取通知书)和居民身份证复印件。<br>  - 户口本原件及本人页复印件。<br>  - 学生家庭所在地有关部门出具的家庭经济困难证明。</p></div></details></div>
+                             <div class="details-item border rounded-lg"><details><summary class="flex items-center justify-between p-3 cursor-pointer font-semibold"><span class="flex items-center"><i data-lucide-icon="shield-check" class="w-5 h-5 mr-2 text-lime-500"></i>绿色通道</span><i data-lucide="chevron-down" class="w-5 h-5 transition-transform transform group-open:rotate-180"></i></summary><div class="p-4 border-t text-gray-700 leading-relaxed"><p>对被录取入学、无法缴纳学费的家庭经济困难新生，学校一律先办理入学手续，然后再根据核实后的情况，采取不同办法予以资助。</p></div></details></div>
+                        </div>
+                    </div>
+                    
+                    <div class="card p-6">
+                        <div class="flex items-center text-amber-500 mb-4"><i data-lucide="wrench" class="w-10 h-10 mr-4"></i><h3 class="text-2xl font-bold">中等职业教育</h3></div>
+                        <div class="space-y-2">
+                             <div class="details-item border rounded-lg"><details><summary class="flex items-center justify-between p-3 cursor-pointer font-semibold"><span class="flex items-center"><i data-lucide="file-check-2" class="w-5 h-5 mr-2 text-amber-600"></i>免学费政策</span><i data-lucide="chevron-down" class="w-5 h-5 transition-transform transform group-open:rotate-180"></i></summary><div class="p-3 border-t text-gray-600"><p>对公办中职学校全日制在校生中所有农村（含县镇）学生、城市涉农专业学生和家庭经济困难学生免除学费（艺术类相关表演专业学生除外）。</p></div></details></div>
+                             <div class="details-item border rounded-lg"><details><summary class="flex items-center justify-between p-3 cursor-pointer font-semibold"><span class="flex items-center"><i data-lucide="piggy-bank" class="w-5 h-5 mr-2 text-blue-500"></i>国家助学金</span><i data-lucide="chevron-down" class="w-5 h-5 transition-transform transform group-open:rotate-180"></i></summary><div class="p-3 border-t text-gray-600"><p><strong>对象:</strong> 资助一、二年级在校涉农专业学生和非涉农专业家庭经济困难学生。<br><strong>金额:</strong> 平均每生每年1500元。</p></div></details></div>
+                             <div class="details-item border rounded-lg"><details><summary class="flex items-center justify-between p-3 cursor-pointer font-semibold"><span class="flex items-center"><i data-lucide="briefcase" class="w-5 h-5 mr-2 text-purple-500"></i>顶岗实习</span><i data-lucide="chevron-down" class="w-5 h-5 transition-transform transform group-open:rotate-180"></i></summary><div class="p-3 border-t text-gray-600"><p>安排三年级学生到企业等单位顶岗实习，获得一定报酬，用于支付学习和生活费用。</p></div></details></div>
+                        </div>
+                    </div>
+
+                    <div class="card p-6">
+                        <div class="flex items-center text-indigo-500 mb-4"><i data-lucide="graduation-cap" class="w-10 h-10 mr-4"></i><h3 class="text-2xl font-bold">普通高中</h3></div>
+                        <div class="space-y-2">
+                            <div class="details-item border rounded-lg"><details><summary class="flex items-center justify-between p-3 cursor-pointer font-semibold"><span class="flex items-center"><i data-lucide="piggy-bank" class="w-5 h-5 mr-2 text-blue-500"></i>国家助学金</span><i data-lucide="chevron-down" class="w-5 h-5 transition-transform transform group-open:rotate-180"></i></summary><div class="p-3 border-t text-gray-600"><p><strong>对象:</strong> 用于资助普通高中在校生中的家庭经济困难学生。<br><strong>金额:</strong> 平均资助标准为每生每年1500元，具体标准由各地在1000-3000元范围内确定，可分2-3档。</p></div></details></div>
+                            <div class="details-item border rounded-lg"><details><summary class="flex items-center justify-between p-3 cursor-pointer font-semibold"><span class="flex items-center"><i data-lucide="file-check-2" class="w-5 h-5 mr-2 text-amber-600"></i>建档立卡等学生免学杂费</span><i data-lucide="chevron-down" class="w-5 h-5 transition-transform transform group-open:rotate-180"></i></summary><div class="p-3 border-t text-gray-600"><p>对普通高中就读的建档立卡家庭经济困难学生、非建档立卡的家庭经济困难残疾学生、农村低保家庭学生、农村特困救助供养学生，免除学杂费。</p></div></details></div>
+                             <div class="details-item border rounded-lg"><details><summary class="flex items-center justify-between p-3 cursor-pointer font-semibold"><span class="flex items-center"><i data-lucide="gem" class="w-5 h-5 mr-2 text-rose-500"></i>滋蕙计划</span><i data-lucide="chevron-down" class="w-5 h-5 transition-transform transform group-open:rotate-180"></i></summary><div class="p-3 border-t text-gray-600"><p>由中央财政出资，奖励普通高中品学兼优的家庭经济困难学生，奖励标准为每人2000元。</p></div></details></div>
+                        </div>
+                    </div>
+
+                    <div class="card p-6">
+                        <div class="flex items-center text-green-500 mb-4"><i data-lucide="book-open" class="w-10 h-10 mr-4"></i><h3 class="text-2xl font-bold">义务教育阶段</h3></div>
+                        <p class="text-gray-700">实施“两免一补”和学生营养改善计划。<br>
+                        <strong>“两免”</strong>：全面免除城乡义务教育阶段学生学杂费，对农村学生和城市家庭经济困难学生免费提供教科书。<br>
+                        <strong>“一补”</strong>：对家庭经济困难寄宿生提供生活补助（小学生1000元/年，初中生1250元/年）。<br>
+                        <strong>营养改善计划</strong>：在部分地区试点，为农村学生提供营养膳食补助（标准为每生每天3元）。</p>
+                    </div>
+
+                    <div class="card p-6">
+                        <div class="flex items-center text-blue-500 mb-4"><i data-lucide="baby" class="w-10 h-10 mr-4"></i><h3 class="text-2xl font-bold">学前教育</h3></div>
+                        <p class="text-gray-700">按照“地方先行、中央补助”原则，地方政府对普惠性幼儿园在园家庭经济困难儿童、孤儿和残疾儿童予以资助。同时鼓励社会捐资助学。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="minority-policies" class="py-20 bg-gray-50">
+            <div class="container mx-auto px-6">
+                <h2 class="section-title brand-text-blue">少数民族学生专项优待政策</h2>
+                <p class="section-subtitle">
+                    为促进民族团结与共同发展，国家在政治、教育、文化、经济等方面为少数民族学生与群众提供了多项优待与扶持政策。
+                </p>
+                <div class="max-w-4xl mx-auto space-y-4">
+                    <div class="details-item card p-2 bg-white">
+                        <details class="group">
+                            <summary class="flex items-center justify-between p-4 cursor-pointer font-semibold text-lg">
+                                <span class="flex items-center"><i data-lucide="shield" class="w-6 h-6 mr-3 text-blue-500"></i>政治权利保障</span>
+                                <i data-lucide="chevron-down" class="w-5 h-5 transition-transform transform group-open:rotate-180"></i>
+                            </summary>
+                            <div class="p-4 pt-0 text-gray-600 border-t mt-2">
+                                <p class="mt-2">根据《中华人民共和国民族区域自治法》，国家保障少数民族平等参与国家管理和社会事务的权利。在录用工作人员时，对少数民族人员给予适当照顾，并鼓励各类专业人员参加民族自治地方的建设工作。</p>
+                            </div>
+                        </details>
+                    </div>
+                    <div class="details-item card p-2 bg-white">
+                        <details class="group">
+                            <summary class="flex items-center justify-between p-4 cursor-pointer font-semibold text-lg">
+                                <span class="flex items-center"><i data-lucide="book-marked" class="w-6 h-6 mr-3 text-green-500"></i>教育发展优待</span>
+                                <i data-lucide="chevron-down" class="w-5 h-5 transition-transform transform group-open:rotate-180"></i>
+                            </summary>
+                            <div class="p-4 pt-0 text-gray-600 border-t mt-2">
+                                <p class="mt-2"><strong>教育资源倾斜：</strong>国家设立专项经费，帮助少数民族地区发展教育事业，改善办学条件。</p>
+                                <p class="mt-2"><strong>双语教育支持：</strong>支持以少数民族学生为主的学校实施双语教学，传承民族语言文化。</p>
+                                <p class="mt-2"><strong>高考加分政策：</strong>对少数民族考生实行高考加分，鼓励更多学生接受高等教育。</p>
+                            </div>
+                        </details>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="suibe-aid" class="py-20 bg-white">
+            <div class="container mx-auto px-6">
+                <h2 class="section-title brand-text-blue">上经贸大专属资助</h2>
+                <p class="section-subtitle">
+                    除国家资助外，上海对外经贸大学还设立了丰富的校内奖助学金，激励和帮助上经贸大学子成长成才。
+                </p>
+                <div class="bg-white rounded-lg shadow-lg p-4 sm:p-8">
+                    <div id="tabs-container" class="border-b border-gray-200 mb-6 flex flex-wrap justify-center">
+                        <button data-tab="tab1" class="tab-button active text-sm sm:text-base font-semibold py-3 px-4 sm:px-6 border-b-2 transition-colors">校级荣誉奖项</button>
+                        <button data-tab="tab2" class="tab-button text-sm sm:text-base font-semibold py-3 px-4 sm:px-6 border-b-2 border-transparent text-gray-500 hover:text-gray-700 transition-colors">专项/企业合作奖助</button>
+                        <button data-tab="tab3" class="tab-button text-sm sm:text-base font-semibold py-3 px-4 sm:px-6 border-b-2 border-transparent text-gray-500 hover:text-gray-700 transition-colors">院系特色奖助</button>
+                        <button data-tab="tab4" class="tab-button text-sm sm:text-base font-semibold py-3 px-4 sm:px-6 border-b-2 border-transparent text-gray-500 hover:text-gray-700 transition-colors">助困助学金</button>
+                    </div>
+                    <div id="tab-contents" class="overflow-x-auto">
+                        <div id="tab1" class="tab-content active fade-in">
+                            <table class="w-full text-left border-collapse min-w-[600px]">
+                                <thead>
+                                    <tr>
+                                        <th class="py-3 px-4 bg-blue-50 font-semibold text-blue-800 border-b-2 border-blue-200 rounded-tl-lg">奖项名称</th>
+                                        <th class="py-3 px-4 bg-blue-50 font-semibold text-blue-800 border-b-2 border-blue-200">奖励范围</th>
+                                        <th class="py-3 px-4 bg-blue-50 font-semibold text-blue-800 border-b-2 border-blue-200 rounded-tr-lg">获奖比例/人数</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="text-gray-700">
+                                    <tr class="hover:bg-gray-100"><td class="py-3 px-4 border-b">校长奖学金 (20000元)</td><td class="py-3 px-4 border-b">全校全日制学生</td><td class="py-3 px-4 border-b">每年不等</td></tr>
+                                    <tr class="hover:bg-gray-100"><td class="py-3 px-4 border-b">本科生奖学金 (200-5000元)</td><td class="py-3 px-4 border-b">全校学生</td><td class="py-3 px-4 border-b">学生总数的40.5%</td></tr>
+                                    <tr class="hover:bg-gray-100"><td class="py-3 px-4 border-b">研究生学业奖学金 (4000-12000元)</td><td class="py-3 px-4 border-b">全日制研究生(新生除外)</td><td class="py-3 px-4 border-b">学生总数的90%</td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div id="tab2" class="tab-content fade-in">
+                             <table class="w-full text-left border-collapse min-w-[600px]">
+                                <thead>
+                                    <tr>
+                                        <th class="py-3 px-4 bg-red-50 font-semibold text-red-800 border-b-2 border-red-200 rounded-tl-lg">奖项名称</th>
+                                        <th class="py-3 px-4 bg-red-50 font-semibold text-red-800 border-b-2 border-red-200">金额</th>
+                                        <th class="py-3 px-4 bg-red-50 font-semibold text-red-800 border-b-2 border-red-200 rounded-tr-lg">名额</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="text-gray-700">
+                                    <tr class="hover:bg-gray-100"><td class="py-3 px-4 border-b">宝钢优秀学生奖学金</td><td class="py-3 px-4 border-b">10000元</td><td class="py-3 px-4 border-b">4名</td></tr>
+                                    <tr class="hover:bg-gray-100"><td class="py-3 px-4 border-b">ACCA卓越/全科通过奖</td><td class="py-3 px-4 border-b">2500-10000元</td><td class="py-3 px-4 border-b">不限名额</td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div id="tab3" class="tab-content fade-in">
+                            <table class="w-full text-left border-collapse min-w-[600px]">
+                                <thead>
+                                    <tr>
+                                        <th class="py-3 px-4 bg-green-50 font-semibold text-green-800 border-b-2 border-green-200 rounded-tl-lg">奖项名称</th>
+                                        <th class="py-3 px-4 bg-green-50 font-semibold text-green-800 border-b-2 border-green-200">金额/补贴</th>
+                                        <th class="py-3 px-4 bg-green-50 font-semibold text-green-800 border-b-2 border-green-200 rounded-tr-lg">名额</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="text-gray-700">
+                                    <tr class="hover:bg-gray-100"><td class="py-3 px-4 border-b">德意志学术交流中心DAAD Surplus奖学金</td><td class="py-3 px-4 border-b">3500欧元/年</td><td class="py-3 px-4 border-b">6名</td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div id="tab4" class="tab-content fade-in">
+                            <table class="w-full text-left border-collapse min-w-[600px]">
+                                <thead>
+                                    <tr>
+                                        <th class="py-3 px-4 bg-yellow-50 font-semibold text-yellow-800 border-b-2 border-yellow-200 rounded-tl-lg">助学金名称</th>
+                                        <th class="py-3 px-4 bg-yellow-50 font-semibold text-yellow-800 border-b-2 border-yellow-200">金额</th>
+                                        <th class="py-3 px-4 bg-yellow-50 font-semibold text-yellow-800 border-b-2 border-yellow-200 rounded-tr-lg">名额</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="text-gray-700">
+                                    <tr class="hover:bg-gray-100"><td class="py-3 px-4 border-b">爱建特种基金会奖学金</td><td class="py-3 px-4 border-b">500-2500元</td><td class="py-3 px-4 border-b">107名</td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                     <p class="text-center text-gray-500 mt-4 text-sm">注：此为部分奖助学金，完整列表及具体评选条件以学校官方通知为准。</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="faq" class="py-20 bg-gray-50">
+            <div class="container mx-auto px-6">
+                <h2 class="section-title brand-text-blue">申请指南与常见问题</h2>
+                <div class="max-w-3xl mx-auto space-y-4">
+                    <div class="details-item card p-2 bg-white">
+                        <details class="group">
+                            <summary class="flex items-center justify-between p-4 cursor-pointer font-semibold">家庭经济困难如何认定？<i data-lucide="chevron-down" class="w-5 h-5 transition-transform transform group-open:rotate-180"></i></summary>
+                            <div class="p-4 pt-0 text-gray-600 border-t mt-2"><p class="mt-2">学生需要在每学年向学校提交认定申请及相关证明材料，学校会组织认定小组进行评议，并参考学生日常消费行为等进行综合评定。</p></div>
+                        </details>
+                    </div>
+                    <div class="details-item card p-2 bg-white">
+                        <details class="group">
+                            <summary class="flex items-center justify-between p-4 cursor-pointer font-semibold">新生入学时交不起学费怎么办？<i data-lucide="chevron-down" class="w-5 h-5 transition-transform transform group-open:rotate-180"></i></summary>
+                            <div class="p-4 pt-0 text-gray-600 border-t mt-2"><p class="mt-2">所有高校都为家庭经济困难新生开通了“绿色通道”。如果暂时无法缴纳学费，可以通过“绿色通道”先办理入学手续，入学后再根据核实后的情况，申请相应的资助项目。</p></div>
+                        </details>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="py-20 bg-white">
+            <div class="container mx-auto px-6">
+                <h2 class="section-title brand-text-blue">关于我们</h2>
+                <div class="flex flex-col md:flex-row items-center gap-12">
+                    <div class="md:w-1/2">
+                        <h3 class="text-3xl font-bold brand-text-red mb-4">我们的使命</h3>
+                        <p class="text-gray-600 mb-6 leading-relaxed">我们是来自上海对外经贸大学的“石榴籽”少数民族资助宣讲团。我们致力于将党和国家的资助政策体系，介绍给更多偏远地区和少数民族贫困地区的学弟学妹们，用我们的行动，助力每一位拥有读书梦的学子在国家的帮助下圆梦，让大家像石榴籽一样紧紧抱在一起，共同奋斗！</p>
+                        <div class="flex items-center space-x-4">
+                             <img src="https://www.suibe.edu.cn/images/logo.png" alt="SUIBE Logo" class="h-16">
+                             <div>
+                                <p class="font-semibold text-lg brand-text-blue">上海对外经贸大学</p>
+                                <p class="text-gray-500">Shanghai University of International Business and Economics</p>
+                             </div>
+                        </div>
+                    </div>
+                    <div class="md:w-1/2">
+                        <div class="grid grid-cols-2 gap-4">
+                            <img src="https://placehold.co/600x400/e2e8f0/64748b?text=校园风光1" alt="上经贸大校园风光1" class="rounded-lg shadow-lg w-full h-auto object-cover">
+                            <img src="https://placehold.co/600x400/e0f2fe/0ea5e9?text=校园风光2" alt="上经贸大校园风光2" class="rounded-lg shadow-lg w-full h-auto object-cover mt-8">
+                            <img src="https://placehold.co/600x400/fecaca/dc2626?text=宣讲团活动1" alt="宣讲团活动照片1" class="rounded-lg shadow-lg w-full h-auto object-cover">
+                            <img src="https://placehold.co/600x400/d1fae5/10b981?text=宣讲团活动2" alt="宣讲团活动照片2" class="rounded-lg shadow-lg w-full h-auto object-cover mt-8">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="py-20 bg-gray-50">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="section-title brand-text-blue">联系我们 &amp; 答疑分享</h2>
+                <p class="section-subtitle">希望各位学弟学妹们能够克服一切困难，走到更广的天地，在最值得奋斗的青春遇见最美的自己！如有任何疑问，请随时联系我们。</p>
+                <div class="flex flex-col md:flex-row justify-center items-center gap-12">
+                    <div class="text-center">
+                        <h3 class="text-xl font-semibold mb-2">微信咨询</h3>
+                        <img src="https://api.qrserver.com/v1/create-qr-code/?size=180x180&data=my1915390020" alt="宣讲团微信二维码" class="mx-auto rounded-lg shadow-md">
+                        <p class="mt-2 text-gray-600">扫码添加好友</p>
+                        <p class="text-gray-500 text-sm">(微信号: my1915390020)</p>
+                    </div>
+                    <div class="text-center">
+                        <h3 class="text-xl font-semibold mb-2">电话咨询</h3>
+                        <div class="flex items-center justify-center text-2xl font-bold brand-text-blue bg-white p-4 rounded-lg shadow-sm">
+                            <i data-lucide="phone" class="w-6 h-6 mr-3"></i>
+                            <span>183-9301-4221</span>
+                        </div>
+                        <p class="mt-2 text-gray-600">欢迎随时来电</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-800 text-white">
+        <div class="container mx-auto px-6 py-8 text-center">
+            <p>&copy; 2025 上海对外经贸大学 “石榴籽”少数民族资助政策宣讲团. All Rights Reserved.</p>
+            <p class="text-sm text-gray-400 mt-2">网站由 Gemini 构建 | 页面设计灵感源自你们的宣讲材料</p>
+        </div>
+    </footer>
+
+    <script>
+        lucide.createIcons();
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+        const mobileMenuLinks = mobileMenu.getElementsByTagName('a');
+        for (let i = 0; i < mobileMenuLinks.length; i++) {
+            mobileMenuLinks[i].addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        }
+        const tabsContainer = document.getElementById('tabs-container');
+        if (tabsContainer) {
+            const tabButtons = tabsContainer.querySelectorAll('.tab-button');
+            const allTabContents = document.querySelectorAll('#tab-contents .tab-content');
+            tabsContainer.addEventListener('click', (e) => {
+                const clickedButton = e.target.closest('.tab-button');
+                if (!clickedButton) return;
+                tabButtons.forEach(button => button.classList.remove('active'));
+                allTabContents.forEach(content => content.classList.remove('active'));
+                clickedButton.classList.add('active');
+                const targetContent = document.getElementById(clickedButton.dataset.tab);
+                if (targetContent) {
+                    targetContent.classList.add('active');
+                }
+            });
+        }
+    </script>
+</body>
+</html>
+```
+
+---
+
+### **网站内容预览**
+
+
+## 石榴籽宣讲团资助政策网站 - 内容模块详解
+
+---
+
+### **模块一：网站首页 (Hero Section)**
+
+* **主标题：** <span style="color: #d93737;">石榴籽</span>心，助梦远航
+* **副标题：** 我们是上海对外经贸大学“石榴籽”少数民族资助宣讲团，致力于将国家覆盖全学段的资助政策带给每一位需要的同学，助力你们的求学之路。
+* [cite_start]**团队口号：** "桂陇渝月共天山，河洛荆襄颁惠笺" [cite: 1, 17, 150]
+* **核心行动点 (按钮):** [探索资助方案] -> (点击后跳转至“国家学生资助政策体系”模块)
+
+---
+
+### **模块二：国家学生资助政策体系 (分学段详解)**
+
+> [cite_start]**引言：** 从学前教育到高等教育，国家已建立起完善的资助政策体系 [cite: 21, 25, 36]。点击下方各学段卡片内的项目，可展开查看详细申请条件与标准。
+
+#### [cite_start]**第一部分：高等教育阶段 (本专科、研究生) [cite: 35]**
+
+* **1. 国家奖学金**
+    * [cite_start]**对象:** 奖励特别优秀的二年级以上(含二年级)全日制在校生 [cite: 66, 156]。
+    * [cite_start]**金额:** 本专科生每人每年 **10,000元** [cite: 72, 156][cite_start]；硕士研究生 **20,000元** [cite: 73, 156][cite_start]；博士研究生 **30,000元** [cite: 73, 156]。
+    * **申请条件:**
+        * [cite_start]学习成绩排名与综合考评成绩排名原则上均位于前 **10%**（含10%） [cite: 67, 156]。
+        * [cite_start]**特殊情况：** 如成绩排名未进入前10%，但达到前30%（含30%），且在道德风尚、学术研究、学科竞赛、创新发明、社会实践等方面表现非常突出，也可申请，但需提交详细证明材料 [cite: 68]。
+    * **申请材料:**
+        * [cite_start]《国家奖学金申请审批表》 [cite: 69]。
+        * [cite_start]学年成绩单和综合考评结果排名表 [cite: 70]。
+        * [cite_start]各类获奖证书复印件及其他突出表现证明材料 [cite: 71]。
+
+* **2. 国家励志奖学金**
+    * [cite_start]**对象:** 奖励资助品学兼优、家庭经济困难的二年级以上(含二年级)全日制本专科在校生 [cite: 158]。
+    * [cite_start]**金额:** 每人每年 **6,000元** [cite: 87, 158]。
+    * **基本条件:**
+        * [cite_start]热爱社会主义祖国，拥护中国共产党的领导 [cite: 76]。
+        * [cite_start]遵守宪法和法律，遵守学校规章制度 [cite: 77]。
+        * [cite_start]诚实守信，道德品质优良 [cite: 78]。
+        * [cite_start]在校期间学习成绩优秀 [cite: 79]。
+        * [cite_start]家庭经济困难，生活俭朴 [cite: 80]。
+    * **申请材料:**
+        * [cite_start]《国家励志奖学金申请表》 [cite: 82]。
+        * [cite_start]各类获奖证书复印件 [cite: 83]。
+        * [cite_start]家庭经济困难情况的个人说明及相关证明文件 [cite: 84, 85]。
+
+* **3. 国家助学金**
+    * [cite_start]**对象:** 资助家庭经济困难的全日制本专科生及研究生 [cite: 34, 160]。
+    * [cite_start]**金额:** 例如，上海对外经贸大学分为三档：一档 **5,000元**，二档 **3,700元**，三档 **2,500元** [cite: 100, 101, 102, 160]。
+    * **基本条件:**
+        * [cite_start]热爱社会主义祖国，拥护中国共产党的领导 [cite: 89]。
+        * [cite_start]遵守宪法和法律，遵守学校规章制度 [cite: 90]。
+        * [cite_start]诚实守信，道德品质优良 [cite: 91]。
+        * [cite_start]勤奋学习，积极上进 [cite: 92]。
+        * [cite_start]家庭经济困难，生活俭朴 [cite: 93]。
+    * **申请材料:**
+        * [cite_start]《国家助学金申请表》 [cite: 95] [cite_start]和《高校家庭情况调查表》 [cite: 96]。
+        * [cite_start]家庭经济困难情况的个人说明及相关证明文件 [cite: 97, 98]。
+
+* **4. 国家助学贷款**
+    * [cite_start]**对象:** 家庭经济困难的全日制本专科生及研究生 [cite: 48, 154]。
+    * [cite_start]**金额:** 本专科生每人每学年最高不超过 **20,000元**，研究生最高不超过 **25,000元** [cite: 57, 154]。
+    * **基本条件:**
+        * [cite_start]具有中华人民共和国国籍，年满16周岁 [cite: 50]。
+        * [cite_start]诚实守信，遵纪守法，无违法违纪行为 [cite: 51]。
+        * [cite_start]学习努力，能够正常完成学业 [cite: 52]。
+    * **申请材料:**
+        * [cite_start]国家助学贷款申请书 [cite: 53]。
+        * [cite_start]本人学生证(或录取通知书)和居民身份证复印件 [cite: 54]。
+        * [cite_start]户口本原件及本人页复印件 [cite: 54]。
+        * [cite_start]学生家庭所在地有关部门出具的家庭经济困难证明 [cite: 56]。
+
+* **5. 其他资助项目**
+    * [cite_start]**绿色通道:** 对被录取入学、无法缴纳学费的家庭经济困难新生，学校一律先办理入学手续，然后再根据核实后的情况，采取不同办法予以资助 [cite: 124, 125]。
+    * [cite_start]**勤工助学:** 学生利用课余时间，通过自己的劳动取得合法报酬，用于改善学习和生活条件 [cite: 120, 121]。
+    * [cite_start]**服兵役国家教育资助:** 对服义务兵役、直招士官的高校学生，国家给予学费补偿、国家助学贷款代偿、学费减免等资助 [cite: 126, 127]。
+    * [cite_start]**基层就业学费补偿贷款代偿:** 对到中西部地区、艰苦边远地区基层单位就业的高校毕业生，符合条件的可享受学费补偿或国家助学贷款代偿 [cite: 128, 129]。
+
+#### [cite_start]**第二部分：中等职业教育阶段 [cite: 31]**
+
+* [cite_start]**免学费政策:** 对公办中等职业学校全日制学籍一、二、三年级在校生中所有农村（含县镇）学生、城市涉农专业学生和家庭经济困难学生免除学费（艺术类相关表演专业学生除外） [cite: 30]。
+* [cite_start]**国家助学金:** 资助对象是具有中等职业学校全日制正式学籍的在校一、二年级所有农村户籍的学生和县镇非农业户口的学生以及城市家庭经济困难的学生，资助标准为每生每年1500元 [cite: 30]。
+* [cite_start]**顶岗实习:** 安排学生在实践中获得收入，进一步减轻经济负担 [cite: 30]。
+
+#### [cite_start]**第三部分：普通高中阶段 [cite: 33]**
+
+* [cite_start]**国家助学金:** 为贫困学生提供资金支持 [cite: 32]。
+* [cite_start]**学费减免:** 针对特定困难群体，减轻其学费负担 [cite: 32]。
+* [cite_start]**滋蕙计划:** 针对普通高中品学兼优的家庭经济困难学生的资助项目 [cite: 118, 119]。
+* [cite_start]**社会捐资助学:** 引入社会力量，为有需要的学生提供帮助 [cite: 32]。
+
+#### [cite_start]**第四部分：义务教育阶段 [cite: 29]**
+
+* [cite_start]**免学杂费:** 让所有适龄儿童无需承担学杂费负担就能接受教育 [cite: 28]。
+* [cite_start]**免费教科书:** 确保学生有充足的学习资料 [cite: 28]。
+* [cite_start]**困难补助:** 为家庭经济困难的学生提供生活和学习上的支持 [cite: 28]。
+* [cite_start]**农村学生营养改良计划:** 改善农村学生的营养状况，助力他们健康成长 [cite: 28]。
+
+---
+
+### **模块三：少数民族学生专项优待政策**
+
+> **引言：** 为促进民族团结与共同发展，国家在政治、教育、文化、经济等方面为少数民族学生与群众提供了多项优待与扶持政策。
+
+* **1. 政治权利保障:**
+    * 根据《中华人民共和国民族区域自治法》，民族自治地方的自治机关在录用工作人员时，对实行区域自治的民族和其他少数民族的人员应当给予适当的照顾。
+    * 民族自治地方的自治机关可以采取特殊措施，优待、鼓励各种专业人员参加自治地方各项建设工作。
+
+* **2. 教育发展优待:**
+    * **教育资源倾斜:** 国家根据各少数民族的特点和需要，帮助各少数民族地区发展教育事业（《中华人民共和国教育法》第十条）。
+    * **双语教育支持:** 民族自治地方以少数民族学生为主的学校及其他教育机构，使用国家通用语言文字和本民族或者当地民族通用的语言文字实施双语教育（《中华人民共和国教育法》第十二条）。
+    * **高考加分政策:** 对于少数民族考生，高考时可以享受一定的加分政策。
+
+---
+
+### [cite_start]**模块四：上海对外经贸大学专属资助 [cite: 109]**
+
+> [cite_start]**引言：** 除国家资助外，上海对外经贸大学还设立了丰富的校内奖助学金 [cite: 14][cite_start]，激励和帮助上经贸大学子成长成才。（注：以下为部分奖项 [cite: 110, 111, 112]，完整列表及具体评选条件以学校官方通知为准。）
+
+* **第一类：校级荣誉奖项**
+    * **校长奖学金:** 20,000元，名额每年不等。
+    * **本科生奖学金:** 200-5,000元，覆盖约40.5%的学生。
+    * **研究生学业奖学金:** 4,000-12,000元，覆盖约90%的研究生。
+
+* **第二类：专项/企业合作奖助**
+    * **宝钢优秀学生奖学金:** 10,000元，4名。
+    * **ACCA卓越/全科通过奖:** 2,500-10,000元，不限名额。
+    * **校友高尔夫奖学金:** 5,000元，20名。
+    * **“年利达”法科学生奖学金:** 5,000元，4名。
+
+* **第三类：院系特色奖助**
+    * **德意志学术交流中心DAAD Surplus奖学金:** 3,500欧元/年，6名。
+    * **德意志学术交流中心学期交流奖学金:** 交通及生活补贴费共计5,130欧元，5名。
+
+* **第四类：助困助学金**
+    * **爱建特种基金会奖学金:** 500-2,500元，107名。
+    * **中华慈善基金会助学金:** 3,000元，10名。
+    * **维润助学金:** 2,500元，6名。
+
+---
+
+### **模块五：申请指南与常见问题 (FAQ)**
+
+* **问：家庭经济困难如何认定？**
+    * **答：** 学生需要在每学年向学校提交认定申请及相关证明材料，学校会组织认定小组进行评议，并参考学生日常消费行为等进行综合评定。
+* **问：新生入学时交不起学费怎么办？**
+    * [cite_start]**答：** 所有高校都为家庭经济困难新生开通了“绿色通道” [cite: 125][cite_start]。如果暂时无法缴纳学费，可以通过“绿色通道”先办理入学手续，入学后再根据核实后的情况，申请相应的资助项目 [cite: 124]。
+
+---
+
+### [cite_start]**模块六：关于我们 [cite: 19]**
+
+* [cite_start]**我们的使命:** 我们是来自上海对外经贸大学 [cite: 18] [cite_start]的“石榴籽”少数民族资助宣讲团 [cite: 19][cite_start]。我们致力于将党和国家的资助政策体系介绍给更多偏远地区和少数民族贫困地区的学弟学妹们，助力每一位拥有读书梦的学子在国家的资助政策帮助下圆梦 [cite: 20, 150]。
+* [cite_start]**我们的学校:** [上海对外经贸大学Logo图片] 上海对外经贸大学 (Shanghai University of International Business and Economics) [cite: 3, 23]
+* **风采展示:**
+    * [校园风光图片1]
+    * [校园风光图片2]
+    * [宣讲团活动照片1]
+    * [宣讲团活动照片2]
+
+---
+
+### [cite_start]**模块七：联系我们 & 答疑分享 [cite: 130]**
+
+* [cite_start]**引言:** 希望各位学弟学妹们能够克服一切困难，走到更广的天地，在最值得奋斗的青春遇见最美的自己！ [cite: 141, 142, 143] [cite_start]如有任何疑问，请随时联系我们 [cite: 138]。
+* **微信咨询:**
+    * [宣讲团微信二维码图片]
+    * [cite_start]微信号: my1915390020 [cite: 139]
+* **电话咨询:**
+    * [cite_start]18393014221 [cite: 1
